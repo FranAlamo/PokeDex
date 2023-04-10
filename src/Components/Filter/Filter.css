@@ -1,7 +1,7 @@
 .filterdiv {
-    height: fit-content;
-    width: fit-content;
-    position: absolute;
+    height: 30px;
+    width: 30px;
+
 }
 
 button {
@@ -9,4 +9,10 @@ button {
     width: 30px;
     border-radius: 50%;
     background-color: white;
+    position: absolute;
+    color: red;
+    left: 80%;
+    top: 9%;
+    cursor: pointer;
+    border: 0.5px solid grey;
 }

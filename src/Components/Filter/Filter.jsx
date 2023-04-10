@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Filter.css";
 
 const FilterButton = ({ onFilter }) => {
     const [filterType, setFilterType] = useState('name');
@@ -12,7 +13,7 @@ const FilterButton = ({ onFilter }) => {
     return (
         <div>
             <button onClick={handleFilter}>
-                {filterType === 'name' ? 'Filter by Name' : 'Filter by Number'}
+                {filterType === 'name' ? 'A' : '#'}
             </button>
         </div>
     );
