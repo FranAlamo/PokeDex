@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Title from "../../Components/Title/Title.jsx";
 import SearchBar from "../../Components/Search/Search.jsx";
 import FilterButton from '../../Components/Filter/Filter.jsx';
@@ -30,12 +30,13 @@ function Home() {
             </div>
             <div className="main">
                 {PokeData.map((pokemon) =>
-                    <Card
+                    <Link to={pokemon.id.toString()}>  <Card
                         key={pokemon.id}
                         pokeid={pokemon.id}
                         pokeimg={pokemon.image}
                         pokename={pokemon.name}
                     />
+                    </Link>
                 )}
 
 
