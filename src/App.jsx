@@ -1,7 +1,7 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
-import Home from './Layouts/Home/Home'
-import Details from './Layouts/Details'
+import Home from './Layouts/Home/Home.jsx'
+import Details from './Layouts/Details/Details.jsx'
 import RootLayout from './Layouts/RootLayout'
 function App() {
 

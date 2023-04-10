@@ -1,5 +1,19 @@
-input {
-    height: 20px;
-    width: 70%;
-    background-color: white;
-}
+ input {
+     height: 30px;
+     width: 70%;
+     background-color: white;
+     border-radius: 14%;
+     cursor: pointer;
+     border: 0.5px solid grey;
+ }
+
+ .searchbar {
+     height: 20px;
+     width: 90%;
+     position: absolute;
+     top: 9%;
+     left: 7%;
+     border-radius: 14%;
+
+
+ }

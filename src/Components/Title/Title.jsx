@@ -6,7 +6,7 @@ function Title() {
     return (
         <div className='bigdiv'>
             <div className='logodiv'>
-                <img src={logo} alt="pokeball" />
+                <img id="logoimage" src={logo} alt="pokeball" />
             </div>
             <div className='textdiv'>
                 <p id="text"> Pokédex </p>

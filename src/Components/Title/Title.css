@@ -2,9 +2,13 @@
 
 
 .bigdiv {
-    height: fit-content;
-    width: fit-content;
+    height: 40px;
+    width: 200px;
     position: relative;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .logodiv {
@@ -17,10 +21,20 @@
     height: fit-content;
     width: fit-content;
     position: absolute;
+    left: 25%;
+    top: 10%;
 }
 
 #text {
     color: white;
     font-size: 32px;
     font-family: "Poppins Regular", sans-serif;
+}
+
+#logoimage {
+    height: 27px;
+    width: 27px;
+    margin-top: 9px;
+    margin-left: 9px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(266deg) brightness(104%) contrast(101%);
 }
