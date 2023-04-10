@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Card from '../Components/Card'
 import './Home.css'
+import bulbasaurimg from '../Iconos e imagenes/bulbasaur.png'
 
 function Home() {
 
@@ -14,16 +15,51 @@ function Home() {
 
             </div>
             <div className="main">
-
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
+                <Card
+                    pokeid='001'
+                    pokeimg={bulbasaurimg}
+                    pokename='Bulbasaur'
+                />
             </div>
 
         </div>
