@@ -1,0 +1,37 @@
+.pokemon-details {
+    position: relative;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.pokemon-name {
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.name-div {
+    display: flex;
+}
+
+.arrow-back {
+    width: 40px;
+    height: 40px;
+}
+
+.pokemon-id {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.pokemon-info {}
+
+.pokemon-img {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+
+}

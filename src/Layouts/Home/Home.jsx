@@ -30,12 +30,12 @@ function Home() {
             </div>
             <div className="main">
                 {PokeData.map((pokemon) =>
-                    <Link to={pokemon.id.toString()}>  <Card
-                        key={pokemon.id}
-                        pokeid={pokemon.id}
-                        pokeimg={pokemon.image}
-                        pokename={pokemon.name}
-                    />
+                    <Link to={pokemon.id.toString()} key={pokemon.id}
+                    >  <Card
+                            pokeid={pokemon.id}
+                            pokeimg={pokemon.image}
+                            pokename={pokemon.name}
+                        />
                     </Link>
                 )}
 
