@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    background-color: aqua;
+    width: 25vw;
+    aspect-ratio: 1 / 1;
+    margin: 10px;
+    border-radius: 10px;
+}
