@@ -1,6 +1,6 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
-import Home from './Layouts/Home'
+import Home from './Layouts/Home/Home'
 import Details from './Layouts/Details'
 import RootLayout from './Layouts/RootLayout'
 function App() {

@@ -1,17 +1,18 @@
-import Bulbasaur from "../Iconos e imagenes/Bulbasaur";
-import Charmander from "../Iconos e imagenes/Charmander";
-import Squirtle from "../Iconos e imagenes/Squirtle";
-import Butterfree from "../Iconos e imagenes/Butterfree";
-import Gastly from "../Iconos e imagenes/Gastly";
-import Ditto from "../Iconos e imagenes/Ditto";
-import Aron from "../Iconos e imagenes/Aron";
-import Mew from "../Iconos e imagenes/Mew";
-import Pikachu from "../Iconos e imagenes/Pikachu";
+import Bulbasaur from "../Iconos e imagenes/bulbasaur.png";
+import Charmander from "../Iconos e imagenes/charmander.png";
+import Squirtle from "../Iconos e imagenes/squirtle.png";
+import Butterfree from "../Iconos e imagenes/butterfree.png";
+import Gastly from "../Iconos e imagenes/gastly.png";
+import Ditto from "../Iconos e imagenes/ditto.png";
+import Aron from "../Iconos e imagenes/aron.png";
+import Mew from "../Iconos e imagenes/mew.png";
+import Pikachu from "../Iconos e imagenes/pikachu.png";
+
 const PokeData = [
   {
     id: "001",
     name: "Bulbasaur",
-    image: { Bulbasaur },
+    image: Bulbasaur,
     color: "#74CB48",
     secondary_color: "#A43E9E",
     main_type: "Grass",
@@ -34,7 +35,7 @@ const PokeData = [
   {
     id: "004",
     name: "Charmander",
-    image: { Charmander },
+    image: Charmander,
     color: "#74CB48",
     secondary_color: "#F57D31",
     main_type: "Fire",
@@ -46,17 +47,17 @@ const PokeData = [
       "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
     stats: {
       HP: 39,
-      ATK: 052,
-      DEF: 043,
-      SATK: 060,
-      SDEF: 050,
-      SPD: 065,
+      ATK: 52,
+      DEF: 43,
+      SATK: 60,
+      SDEF: 50,
+      SPD: 65,
     },
   },
   {
     id: "007",
     name: "Squirtle",
-    image: { Squirtle },
+    image: Squirtle,
     color: "#6493EB",
     secondary_color: "#6493EB",
     main_type: "Water",
@@ -67,18 +68,18 @@ const PokeData = [
     description:
       "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
     stats: {
-      HP: 044,
+      HP: 44,
       ATK: 48,
-      DEF: 065,
-      SATK: 050,
-      SDEF: 064,
-      SPD: 043,
+      DEF: 65,
+      SATK: 50,
+      SDEF: 64,
+      SPD: 43,
     },
   },
   {
     id: "012",
     name: "Butterfree",
-    image: { Butterfree },
+    image: Butterfree,
     color: "#A7B723",
     secondary_color: "#8638e5",
     main_type: "Bug",
@@ -90,18 +91,18 @@ const PokeData = [
     description:
       "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
     stats: {
-      HP: 060,
-      ATK: 045,
-      DEF: 050,
-      SATK: 090,
-      SDEF: 080,
-      SPD: 070,
+      HP: 60,
+      ATK: 45,
+      DEF: 50,
+      SATK: 90,
+      SDEF: 80,
+      SPD: 70,
     },
   },
   {
     id: "025",
     name: "Pikachu",
-    image: { Pikachu },
+    image: Pikachu,
     color: "#F9CF30",
     secondary_color: "#F9CF30",
     main_type: "Electric",
@@ -112,18 +113,18 @@ const PokeData = [
     description:
       "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
     stats: {
-      HP: 035,
-      ATK: 055,
-      DEF: 040,
-      SATK: 050,
-      SDEF: 050,
-      SPD: 090,
+      HP: 35,
+      ATK: 55,
+      DEF: 40,
+      SATK: 50,
+      SDEF: 50,
+      SPD: 90,
     },
   },
   {
     id: "092",
     name: "Gastly",
-    image: { Gastly },
+    image: Gastly,
     color: "#70559B",
     secondary_color: "#A43E9E",
     main_type: "Ghost",
@@ -134,18 +135,18 @@ const PokeData = [
     description:
       "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
     stats: {
-      HP: 030,
-      ATK: 035,
-      DEF: 030,
+      HP: 30,
+      ATK: 35,
+      DEF: 30,
       SATK: 100,
-      SDEF: 035,
-      SPD: 080,
+      SDEF: 35,
+      SPD: 80,
     },
   },
   {
     id: "132",
     name: "Ditto",
-    image: { Ditto },
+    image: Ditto,
     color: "#AAA67F",
     secondary_color: "#AAA67F",
     main_type: "Normal",
@@ -156,18 +157,18 @@ const PokeData = [
     description:
       "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
     stats: {
-      HP: 030,
-      ATK: 035,
-      DEF: 030,
-      SATK: 0100,
-      SDEF: 035,
-      SPD: 080,
+      HP: 30,
+      ATK: 35,
+      DEF: 30,
+      SATK: 100,
+      SDEF: 35,
+      SPD: 80,
     },
   },
   {
     id: "152",
     name: "Mew",
-    image: { Mew },
+    image: Mew,
     color: "#FB5584",
     secondary_color: "#FB5584",
     main_type: "Psychic",
@@ -188,7 +189,7 @@ const PokeData = [
   {
     id: "304",
     name: "Aron",
-    image: { Aron },
+    image: Aron,
     color: "#B7B9D0",
     secondary_color: "#B69E31",
     main_type: "Steel",
@@ -200,12 +201,12 @@ const PokeData = [
     description:
       "There is a plant seed on its back right from the day this Pokemon is born. The seed slowly grows larger.",
     stats: {
-      HP: 050,
-      ATK: 070,
+      HP: 50,
+      ATK: 70,
       DEF: 100,
-      SATK: 040,
-      SDEF: 040,
-      SPD: 030,
+      SATK: 40,
+      SDEF: 40,
+      SPD: 30,
     },
   },
 ];
