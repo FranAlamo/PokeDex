@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins+Regular&display=swap');
+
+
+.bigdiv {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+}
+
+.logodiv {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+}
+
+.textdiv {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+}
+
+#text {
+    color: white;
+    font-size: 32px;
+    font-family: "Poppins Regular", sans-serif;
+}

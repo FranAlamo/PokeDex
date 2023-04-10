@@ -23,12 +23,12 @@ const PokeData = [
     description:
       "There is a plant seed on its back right from the day this Pokemon is born. The seed slowly grows larger.",
     stats: {
-      HP: 045,
-      ATK: 049,
-      DEF: 049,
-      SATK: 065,
-      SDEF: 065,
-      SPD: 045,
+      HP: 45,
+      ATK: 49,
+      DEF: 49,
+      SATK: 65,
+      SDEF: 65,
+      SPD: 45,
     },
   },
   {
@@ -45,7 +45,7 @@ const PokeData = [
     description:
       "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
     stats: {
-      HP: 039,
+      HP: 39,
       ATK: 052,
       DEF: 043,
       SATK: 060,
@@ -68,7 +68,7 @@ const PokeData = [
       "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
     stats: {
       HP: 044,
-      ATK: 048,
+      ATK: 48,
       DEF: 065,
       SATK: 050,
       SDEF: 064,
