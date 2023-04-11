@@ -1,19 +1,29 @@
  input {
-     height: 30px;
-     width: 70%;
+     height: 35px;
+     width: 95%;
      background-color: white;
-     border-radius: 10px;
+     border-radius: 15px;
      cursor: pointer;
      border: 0.5px solid grey;
+     padding: 5px 40px;
  }
 
  .searchbar {
      height: 20px;
      width: 90%;
-     position: absolute;
+     /*    position: absolute;
      top: 9%;
-     left: 7%;
+     left: 7%; */
      border-radius: 10px;
 
 
+ }
+
+ .search-button {
+     border: none;
+     outline: none;
+     position: absolute;
+     right: 345px;
+     top: 90px;
+     background-color: transparent;
  }

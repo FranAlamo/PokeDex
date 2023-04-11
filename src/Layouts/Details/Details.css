@@ -1,7 +1,20 @@
+.pokemon-info {
+    margin: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 545px;
+}
+
 .pokemon-details {
     position: relative;
     max-width: 390px;
     margin: 0 auto;
+    height: 100vh;
+    max-height: 844px;
 }
 
 .pokemon-name {
@@ -10,11 +23,13 @@
     justify-content: space-between;
     color: #FFF;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 
 .name-div {
     display: flex;
+    z-index: 50;
 }
 
 .arrow-back {
@@ -25,13 +40,138 @@
 .pokemon-id {
     font-size: 1rem;
     margin-top: 10px;
+    z-index: 50;
 }
-
-.pokemon-info {}
 
 .pokemon-img {
     position: absolute;
-    top: 150px;
-    right: 100px;
+    top: 100px;
+    right: 70px;
+    width: 250px;
+
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.type-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.type-container>span {
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin: 20px 10px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.info-about {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: .8rem;
+}
+
+.weight,
+.height,
+.moves {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+
+
+}
+
+.weight>div>svg,
+.height>div>svg {
+    margin-right: 10px;
+}
+
+h6 {
+    font-size: .7rem;
+    font-weight: normal;
+    color: #666;
+    margin-left: 15px;
+}
+
+.height,
+.moves {
+
+    border-left: 3px solid #e0e0e0;
+}
+
+.description {
+    font-size: .85rem;
+    margin: 20px 12.5px;
+    color: #212121;
+    padding-top: 1rem;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.stats-columns {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.stats-column-1 {
+    font-size: .9rem;
+    border-right: 3px solid #e0e0e0;
+    padding-right: 1rem;
+
+}
+
+.stats-column-2 {
+    font-size: .9rem;
+    padding: 0 1rem;
+
+}
+
+.stats-column-3 {
+    font-size: .8rem;
+
+
+}
+
+.progress-bar {
+    height: 5px;
+    width: 200px;
+    margin-bottom: 17.5px;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.progress {
+    opacity: 1;
+    height: 5px;
+    border-radius: 2px;
+
+}
+
+.pokeball {
+    position: absolute;
+    left: 120px;
+    bottom: 565px;
+    width: 260px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(266deg) brightness(104%) contrast(101%) opacity(10%);
+
 
 }

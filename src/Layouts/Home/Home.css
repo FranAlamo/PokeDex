@@ -7,8 +7,16 @@
 .header {
     height: 15vh;
     width: 100vw;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .main {
     display: flex;

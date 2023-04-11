@@ -1,34 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins+Regular&display=swap');
-
-
 .bigdiv {
     height: 40px;
     width: 200px;
-    position: relative;
+    /*  position: relative;
     top: 20%;
-    left: 5%;
+    left: 5%; */
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
 }
 
 .logodiv {
     height: fit-content;
     width: fit-content;
-    position: absolute;
+    /*     position: absolute;
+ */
 }
 
 .textdiv {
     height: fit-content;
     width: fit-content;
-    position: absolute;
+    /*     position: absolute;
     left: 25%;
     top: 10%;
+ */
 }
 
 #text {
     color: white;
     font-size: 32px;
     font-family: "Poppins Regular", sans-serif;
+    font-weight: bolder;
 }
 
 #logoimage {
