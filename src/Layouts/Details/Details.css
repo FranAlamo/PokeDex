@@ -213,4 +213,22 @@ h6 {
         backdrop-filter: blur(5px);
     }
 
+    .pokemon-img {
+        position: absolute;
+        top: 14%;
+        right: 20%;
+        width: 250px;
+
+    }
+
+    .pokeball {
+        position: absolute;
+        left: 30%;
+        bottom: 68%;
+        width: 260px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(266deg) brightness(104%) contrast(101%) opacity(10%);
+
+
+    }
+
 }
