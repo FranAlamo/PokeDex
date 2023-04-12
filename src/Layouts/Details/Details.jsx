@@ -95,30 +95,37 @@ function Details() {
 
                         <div className='stats-column-3'>
 
-                            <div className='progress-bar' style={{ backgroundColor: pokemon.color }}>
+                            <div className='progress-bar' >
 
-                                <div className='progress' style={{ backgroundColor: 'black', width: pokemon.stats.HP + 'px' }}></div>
+                                <div className='progress' style={{ backgroundColor: pokemon.color, width: pokemon.stats.HP + 'px' }}></div>
+                                <div className='not-progress' style={{ backgroundColor: pokemon.color, width: '200' - (pokemon.stats.HP) + 'px' }}></div>
                             </div>
-                            <div className='progress-bar' style={{ backgroundColor: pokemon.color }}>
+                            <div className='progress-bar' >
 
-                                <div className='progress' style={{ backgroundColor: 'black', width: pokemon.stats.ATK + 'px' }}></div>
+                                <div className='progress' style={{ backgroundColor: pokemon.color, width: pokemon.stats.ATK + 'px' }}></div>
+                                <div className='not-progress' style={{ backgroundColor: pokemon.color, width: '200' - (pokemon.stats.ATK) + 'px' }}></div>
                             </div>
-                            <div className='progress-bar' style={{ backgroundColor: pokemon.color }}>
+                            <div className='progress-bar' >
 
-                                <div className='progress' style={{ backgroundColor: 'black', width: pokemon.stats.DEF + 'px' }}></div>
+                                <div className='progress' style={{ backgroundColor: pokemon.color, width: pokemon.stats.DEF + 'px' }}></div>
+                                <div className='not-progress' style={{ backgroundColor: pokemon.color, width: '200' - (pokemon.stats.DEF) + 'px' }}></div>
                             </div>
-                            <div className='progress-bar' style={{ backgroundColor: pokemon.color }}>
+                            <div className='progress-bar' >
 
-                                <div className='progress' style={{ backgroundColor: 'black', width: pokemon.stats.SATK + 'px' }}></div>
+                                <div className='progress' style={{ backgroundColor: pokemon.color, width: pokemon.stats.SATK + 'px' }}></div>
+                                <div className='not-progress' style={{ backgroundColor: pokemon.color, width: '200' - (pokemon.stats.SATK) + 'px' }}></div>
                             </div>
-                            <div className='progress-bar' style={{ backgroundColor: pokemon.color }}>
+                            <div className='progress-bar' >
 
-                                <div className='progress' style={{ backgroundColor: 'black', width: pokemon.stats.SDEF + 'px' }}></div>
+                                <div className='progress' style={{ backgroundColor: pokemon.color, width: pokemon.stats.SDEF + 'px' }}></div>
+                                <div className='not-progress' style={{ backgroundColor: pokemon.color, width: '200' - (pokemon.stats.SDEF) + 'px' }}></div>
                             </div>
-                            <div className='progress-bar' style={{ backgroundColor: pokemon.color }}>
+                            <div className='progress-bar' >
 
-                                <div className='progress' style={{ backgroundColor: 'black', width: pokemon.stats.SPD + 'px' }}></div>
+                                <div className='progress' style={{ backgroundColor: pokemon.color, width: pokemon.stats.SPD + 'px' }}></div>
+                                <div className='not-progress' style={{ backgroundColor: pokemon.color, width: '200' - (pokemon.stats.SPD) + 'px' }}></div>
                             </div>
+
                         </div>
                     </div>
                 </div>

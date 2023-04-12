@@ -6,6 +6,7 @@
      cursor: pointer;
      border: 0.5px solid grey;
      padding: 5px 40px;
+     position: relative;
  }
 
  .searchbar {
@@ -23,7 +24,7 @@
      border: none;
      outline: none;
      position: absolute;
-     right: 345px;
-     top: 90px;
+     left: 0;
      background-color: transparent;
+
  }

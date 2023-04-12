@@ -157,10 +157,18 @@ h6 {
     margin-bottom: 17.5px;
     margin-top: 5px;
     border-radius: 2px;
+    display: flex;
 }
 
 .progress {
     opacity: 1;
+    height: 5px;
+    border-radius: 2px;
+
+}
+
+.not-progress {
+    opacity: 0.5;
     height: 5px;
     border-radius: 2px;
 
