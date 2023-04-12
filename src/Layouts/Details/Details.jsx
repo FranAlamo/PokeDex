@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import PokeData from '../../Components/Pokedata'
 import './Details.css'
 import PokeBall from '../../Iconos e imagenes/Pokeball.png'
+
 function Details() {
     const { id } = useParams()
 
@@ -35,7 +36,7 @@ function Details() {
 
 
     return (
-        <>
+        <div className='details'>
             <div className='background'>
                 {lastPokemon === null ? null : <div className='last-pokemon-details' style={{ backgroundColor: lastPokemon.color }}>
                     <header className='pokemon-name' style={{ backgroundColor: lastPokemon.color }}>
@@ -395,7 +396,7 @@ function Details() {
                     </main >
                 </div >
             </div>
-        </>
+        </div>
     )
 }
 
