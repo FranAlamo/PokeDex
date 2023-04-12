@@ -9,9 +9,19 @@
     min-height: 545px;
 }
 
-.background {
-    /*     display: none;
- */
+.arrow-left {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    transform: rotate(180deg);
+    cursor: pointer;
 }
 
 .background {
@@ -271,18 +281,25 @@ h6 {
         position: relative;
     }
 
+
 }
 
-/* @media only screen and (max-height:845px) {
+@media only screen and (min-width:1000px) {
 
-    .pokemon-details,
-    .last-pokemon-details,
-    .next-pokemon-details {
-        transform: scale(0.6);
+
+    .arrow-left {
+        position: absolute;
+        top: 45%;
+        left: 20vw;
+        cursor: pointer;
     }
 
-    .last-pokemon-details,
-    .next-pokemon-details {
-        transform: scale(0.5);
+    .arrow-right {
+        position: absolute;
+        top: 45%;
+        right: 20vw;
+        transform: rotate(180deg);
+        cursor: pointer;
     }
-} */
+
+}
