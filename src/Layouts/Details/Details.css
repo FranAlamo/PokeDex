@@ -6,14 +6,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 545px;
+    min-height: 545px;
+}
+
+.background {}
+
+.main-container {
+    display: none;
 }
 
 .pokemon-details {
     position: relative;
     max-width: 390px;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     max-height: 844px;
 }
 
