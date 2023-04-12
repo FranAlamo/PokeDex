@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import PokeData from '../../Components/Pokedata'
 import './Details.css'
 import PokeBall from '../../Iconos e imagenes/Pokeball.png'
+
 function Details() {
     const { id } = useParams()
 
@@ -10,19 +11,32 @@ function Details() {
     const pokemonIndex = PokeData.indexOf(pokemon)
 
     const [lastPokemon, setLastPokemon] = useState(null)
+    const [nextPokemon, setNextPokemon] = useState(null)
 
-    if (pokemonIndex !== 0) {
-        setLastPokemon(PokeData[pokemonIndex - 1])
-    }
-    const lastIndex = PokeData.length - 1
-    const [nextPokemon, setNextPokemon] = useState(PokeData[pokemonIndex + 1])
-    if (pokemonIndex === lastIndex) {
-        setNextPokemon(null)
-    }
-    console.log(nextPokemon)
-    console.log(lastPokemon)
+    useEffect(() => {
+        const pokemon = PokeData.find(pokemon => pokemon.id === id)
+        const pokemonIndex = PokeData.indexOf(pokemon)
+        const lastIndex = PokeData.length - 1
+
+        if (pokemonIndex !== 0) {
+            setLastPokemon(PokeData[pokemonIndex - 1])
+        } else {
+            setLastPokemon(PokeData[lastIndex])
+        }
+
+        if (pokemonIndex !== lastIndex) {
+            setNextPokemon(PokeData[(pokemonIndex + 1)])
+        } else {
+            setNextPokemon(PokeData[0])
+        }
+    }, [])
+
+
+
+
+
     return (
-        <>
+        <div className='details'>
             <div className='background'>
                 {lastPokemon === null ? null : <div className='last-pokemon-details' style={{ backgroundColor: lastPokemon.color }}>
                     <header className='pokemon-name' style={{ backgroundColor: lastPokemon.color }}>
@@ -31,12 +45,6 @@ function Details() {
                             src={PokeBall}
                         />
                         <div className='name-div'>
-                            <Link to='/' > <svg
-                                className='arrow-back'
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path fill="#FFFFFF" d="m12.23 20.512.774-.774a.469.469 0 0 0 0-.663l-6.06-6.06h13.337c.26 0 .469-.21.469-.468v-1.094a.469.469 0 0 0-.469-.469H6.944l6.06-6.06a.469.469 0 0 0 0-.662l-.774-.774a.469.469 0 0 0-.662 0l-8.18 8.18a.469.469 0 0 0 0 .664l8.18 8.18c.183.183.48.183.662 0Z" />
-                            </svg>
-                            </Link>
 
                             <p>{lastPokemon.name}</p>
                         </div>
@@ -152,12 +160,6 @@ function Details() {
                             src={PokeBall}
                         />
                         <div className='name-div'>
-                            <Link to='/' > <svg
-                                className='arrow-back'
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path fill="#FFFFFF" d="m12.23 20.512.774-.774a.469.469 0 0 0 0-.663l-6.06-6.06h13.337c.26 0 .469-.21.469-.468v-1.094a.469.469 0 0 0-.469-.469H6.944l6.06-6.06a.469.469 0 0 0 0-.662l-.774-.774a.469.469 0 0 0-.662 0l-8.18 8.18a.469.469 0 0 0 0 .664l8.18 8.18c.183.183.48.183.662 0Z" />
-                            </svg>
-                            </Link>
 
                             <p>{nextPokemon.name}</p>
                         </div>
@@ -394,7 +396,7 @@ function Details() {
                     </main >
                 </div >
             </div>
-        </>
+        </div>
     )
 }
 

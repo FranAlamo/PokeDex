@@ -9,18 +9,47 @@
     min-height: 545px;
 }
 
-.background {}
+.background {
+    /*     display: none;
+ */
+}
+
+.background {
+    display: flex;
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.last-pokemon-details,
+.next-pokemon-details {
+    width: 390px;
+    transform: scale(0.7);
+    position: absolute;
+}
+
+.next-pokemon-details {
+    right: -50px;
+}
+
+.last-pokemon-details {
+    left: -50px;
+}
 
 .main-container {
-    display: none;
+    backdrop-filter: blur(5px);
+    height: 100vh;
 }
 
 .pokemon-details {
     position: relative;
     max-width: 390px;
     margin: 0 auto;
-    min-height: 100vh;
-    max-height: 844px;
+    min-height: 100%;
+    transform: scale(0.85);
+    /*     max-height: 844px;
+ */
+
 }
 
 .pokemon-name {
@@ -83,9 +112,9 @@
 .info-about {
     display: flex;
     justify-content: space-between;
-    width: 370px;
-    height: 60px;
-    margin-top: 20px;
+    width: 95%;
+    height: 8%;
+    margin-top: 2.5%;
     font-size: .8rem;
 }
 
@@ -189,3 +218,71 @@ h6 {
 
 
 }
+
+@media only screen and (min-width:391px) {
+
+    .background {
+        display: flex;
+        max-width: 1100px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .last-pokemon-details,
+    .next-pokemon-details {
+        width: 390px;
+        transform: scale(0.7);
+        position: absolute;
+    }
+
+    .next-pokemon-details {
+        right: 0;
+    }
+
+    .last-pokemon-details {
+        left: 0;
+    }
+
+    .main-container {
+        backdrop-filter: blur(5px);
+        height: 100vh;
+    }
+
+    .pokemon-img {
+        position: absolute;
+        top: 8%;
+        right: 15%;
+        width: 250px;
+
+    }
+
+    .pokeball {
+        position: absolute;
+        left: 30%;
+        bottom: 68%;
+        width: 260px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(266deg) brightness(104%) contrast(101%) opacity(10%);
+
+
+    }
+
+    .details {
+        height: 100vh;
+        position: relative;
+    }
+
+}
+
+/* @media only screen and (max-height:845px) {
+
+    .pokemon-details,
+    .last-pokemon-details,
+    .next-pokemon-details {
+        transform: scale(0.6);
+    }
+
+    .last-pokemon-details,
+    .next-pokemon-details {
+        transform: scale(0.5);
+    }
+} */

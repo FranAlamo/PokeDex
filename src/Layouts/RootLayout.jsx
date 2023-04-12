@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 function RootLayout() {
     return (
-        <div className='RootLayout'>
+        <div className='RootLayout' >
             <Outlet />
         </div>
     )
