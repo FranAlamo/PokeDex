@@ -10,6 +10,7 @@ import Pikachu from "../Iconos e imagenes/pikachu.png";
 
 const PokeData = [
   {
+    favourite: false,
     id: "001",
     name: "Bulbasaur",
     image: Bulbasaur,
@@ -33,6 +34,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "004",
     name: "Charmander",
     image: Charmander,
@@ -55,6 +58,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "007",
     name: "Squirtle",
     image: Squirtle,
@@ -77,6 +82,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "012",
     name: "Butterfree",
     image: Butterfree,
@@ -101,6 +108,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "025",
     name: "Pikachu",
     image: Pikachu,
@@ -124,6 +133,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "092",
     name: "Gastly",
     image: Gastly,
@@ -146,6 +157,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "132",
     name: "Ditto",
     image: Ditto,
@@ -169,6 +182,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "152",
     name: "Mew",
     image: Mew,
@@ -191,6 +206,8 @@ const PokeData = [
     },
   },
   {
+    favourite: false,
+
     id: "304",
     name: "Aron",
     image: Aron,

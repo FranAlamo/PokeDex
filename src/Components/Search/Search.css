@@ -1,6 +1,6 @@
  input {
      height: 35px;
-     width: 95%;
+     width: 90%;
      background-color: white;
      border-radius: 15px;
      cursor: pointer;
@@ -16,6 +16,7 @@
      top: 9%;
      left: 7%; */
      border-radius: 10px;
+     margin-top: 1rem;
 
 
  }
@@ -25,6 +26,9 @@
      outline: none;
      position: absolute;
      left: 0;
+     top: 2px;
      background-color: transparent;
 
  }
+
+ @media only screen and (min-width:391px) {}
