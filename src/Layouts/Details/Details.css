@@ -255,8 +255,14 @@ h6 {
 
     .main-container {
         backdrop-filter: blur(5px);
-        height: 100vh;
+        position: absolute;
+        height: 150vh;
+        width: 100vw;
+        top: -160px;
+        overflow: hidden
     }
+
+    .pokemon-details {}
 
     .pokemon-img {
         position: absolute;
@@ -279,6 +285,7 @@ h6 {
     .details {
         height: 100vh;
         position: relative;
+        overflow: hidden;
     }
 
 

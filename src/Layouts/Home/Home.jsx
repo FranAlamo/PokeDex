@@ -10,20 +10,23 @@ import PokeData from '../../Components/Pokedata.jsx';
 
 function Home() {
 
+    const [viewingFavourites, setViewingFavourites] = useState(false)
     const [filterType, setFilterType] = useState('name');
     const [pokemons, setPokemons] = useState(PokeData)
 
     const handleFilter = () => {
         const newFilterType = filterType === 'name' ? 'number' : 'name';
         setFilterType(newFilterType);
-
-        if (pokemons === PokeData) {
-            const pokemonsSortedByName = [...PokeData].sort((poke1, poke2) =>
+        if (filterType === 'name') {
+            const pokemonsSortedByName = [...pokemons].sort((poke1, poke2) =>
                 poke1.name.localeCompare(poke2.name)
-            );
+            )
             setPokemons(pokemonsSortedByName);
+
         } else {
-            setPokemons(PokeData);
+            const pokemonsSortedById = [...pokemons].sort((poke1, poke2) =>
+                poke1.id.localeCompare(poke2.id))
+            setPokemons(pokemonsSortedById)
         }
 
     };
@@ -34,11 +37,43 @@ function Home() {
         const { value } = e.target;
         setSearchValue(value);
 
-        const filteredPokemons = PokeData.filter(
+        const filteredPokemons = PokeData.filter((pokemon) => viewingFavourites ? pokemon.favourite : true).filter(
             (pokemon) => pokemon.name.toLowerCase().includes(value.toLowerCase())
         );
         setPokemons(filteredPokemons);
+        if (value === '' && viewingFavourites) { setPokemons(favouritesPokemons) }
+        if (value === '' && viewingFavourites === false) { setPokemons(PokeData) }
+
     }
+
+
+    const addToFavourite = (id) => {
+        const updatedPokemons = pokemons.map(
+            (pokemon) => {
+                if (pokemon.id == id) {
+                    pokemon.favourite = (pokemon.favourite === true ? false : true)
+
+                }
+                return pokemon
+            }
+        )
+        setPokemons(updatedPokemons)
+    }
+
+    const showFavourites = () => {
+        const favouritesPokemons = pokemons.filter(
+            pokemon => pokemon.favourite === true
+        )
+
+        setPokemons(favouritesPokemons)
+        setViewingFavourites(true)
+    }
+
+    const showAll = () => {
+        setPokemons(PokeData)
+        setViewingFavourites(false)
+    }
+
     return (
         <div className='Home'>
 
@@ -53,20 +88,25 @@ function Home() {
                     <FilterButton
                         filterType={filterType}
                         handleFilter={handleFilter}
+                        showFavourites={showFavourites}
+                        showAll={showAll}
+                        viewingFavourites={viewingFavourites}
                     />
                 </div>
             </div>
             <div className="main">
                 {pokemons.map((pokemon) =>
-                    <Link to={pokemon.id.toString()}
+
+                    <Card
                         key={pokemon.id}
-                        style={{ textDecoration: "none", color: '#212121' }}
-                    >  <Card
-                            pokeid={pokemon.id}
-                            pokeimg={pokemon.image}
-                            pokename={pokemon.name}
-                        />
-                    </Link>
+
+                        pokeid={pokemon.id}
+                        pokeimg={pokemon.image}
+                        pokename={pokemon.name}
+                        pokemonColor={pokemon.color}
+                        addToFavourite={addToFavourite}
+                        pokemonFavourite={pokemon.favourite}
+                    />
                 )}
 
 
