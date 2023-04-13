@@ -76,6 +76,9 @@
   display: flex;
   z-index: 50;
 }
+.name-div > p {
+  margin-top: 4px;
+}
 
 .arrow-back {
   width: 40px;
